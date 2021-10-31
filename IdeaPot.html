@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- text test 는 test 일뿐이고 text는 test 가 아닌  그저 text 일뿐이다. -->
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        /* start  */
+        #pot_card{
+            width: 350px;
+            height: 440px;
+            background-color: rgb(255, 221, 147);
+            text-align: center;
+            border-radius: 5px;
+        }
+        #card-img{
+            width: 320px;
+            height: 220px;
+            /* 패딩 고쳐야함 */
+            padding-top: 12px; 
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        #card-title{
+           float: left;
+           position: absolute;
+           padding-left: 20px;
+           margin-top: 10px;
+           font-size: 1.35em;
+        }
+        #card-content{
+            margin-top: 45px;
+            margin-bottom: 10px;
+            float: left;
+            text-align: left;
+            padding-left: 20px;
+            width: auto;
+        }
+        #user-img{
+            
+            float: left;
+            width: 65px;
+            height: 65px;
+            margin-left: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+            
+        }
+        #card-tag{
+            margin: 0px;
+            float: left;
+            text-align: left;
+            padding-left: 20px;
+            width: 90%;
+        }
+        #user-id{
+            margin-top: 40px;
+            float: left;
+        }
+
+    </style>
+    <div id="pot_card">
+        <img id="card-img" src="img/KakaoTalk_20211026_200149385.jpg" alt="">
+        <h1 id="card-title">: text-test</h1>
+        <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p id="card-tag">#인스타 #맞팔 #아잉부끄러</p>
+        <img id="user-img" src="img/KakaoTalk_20211026_200149385.jpg" alt="">
+        <p id="user-id">BYJ-봉양준</p>
+        <!-- 중요 : 폰트 넣어야 함. -->
+    </div>
+</body>
+</html>
