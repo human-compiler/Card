@@ -17,7 +17,9 @@ sendButton.addEventListener("click",()=>{
 
 
 socket.on("roomName", (data)=>{
-    console.log(data)
+    const li = document.createElement("li");
+    li.innerText = `${data.name} 님이 - ${data.msg}`;
+    chatList.appendChild(li)
 })
 
 console.log(socket)
